@@ -1,0 +1,18 @@
+{
+  "name": "user-menu-service",
+  "packageManager": "yarn@4.6.0",
+  "version": "1.0.0",
+  "main": "server.ts",
+  "repository": "https://github.com/kaita2725/user-menu-service.git",
+  "author": "Adriel Chandra <74240610+kaita2725@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "migrateDBAll": "sequelize-cli db:migrate",
+    "undoMigrateDBAll": "sequelize-cli db:migrate:undo:all",
+    "seedDBAll": "sequelize-cli db:seed:all",
+    "undoSeedDBAll": "sequelize-cli db:seed:undo:all"
+  }
+}
